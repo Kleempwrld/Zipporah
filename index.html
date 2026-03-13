@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elly Enga | My Life Journey</title>
+<meta name="description" content="Elly Enga – My Life Journey, Education, Career, Projects, Dreams, and Contact Information.">
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    color:white;
+    background-image:url("Elly zippo.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+/* HEADER */
+header{
+    background:rgba(0,0,0,0.9);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 16px;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    box-sizing:border-box;
+    z-index:1000;
+}
+.logo{
+    font-size:20px;
+    font-weight:bold;
+}
+/* MENU BUTTON */
+.menu-btn{
+    font-size:26px;
+    background:none;
+    border:none;
+    color:white;
+    cursor:pointer;
+}
+/* MENU */
+.menu{
+    display:none;
+    position:absolute;
+    right:10px;
+    top:50px;
+    background:black;
+    border:1px solid #444;
+    flex-direction:column;
+    width:220px;
+}
+.menu a{
+    padding:12px;
+    text-decoration:none;
+    color:white;
+    border-bottom:1px solid #333;
+    cursor:pointer;
+}
+.menu a:hover{
+    background:#111;
+}
+/* HOME */
+#home{
+    text-align:center;
+    margin-top:120px;
+    font-size:24px;
+    padding:20px;
+    min-height:150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+#quote {
+    font-size:28px;
+    font-weight:bold;
+    color:white;
+    text-shadow: 2px 2px 5px black;
+    opacity:0;
+    transform: translateY(-20px);
+    transition: all 1.5s ease;
+    text-align:center;
+    max-width:90%;
+}
+#quote.show {
+    opacity:1;
+    transform: translateY(0);
+}
+/* SECTIONS */
+section{
+    display:none;
+    position:fixed;
+    top:60px;
+    left:0;
+    width:100%;
+    height:calc(100% - 60px);
+    background:black;
+    overflow-y:auto;
+    padding:20px;
+}
+section p{
+    margin-bottom:16px;
+    line-height:1.6;
+}
+/* PHOTO GRID */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    margin-top:15px;
+}
+.gallery img{
+    width:100%;
+    border-radius:10px;
+}
+/* VIDEOS */
+video{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+/* CHATBOT */
+#chatButton{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#007bff;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:50%;
+    font-size:22px;
+    cursor:pointer;
+    z-index:10000;
+}
+#chatbot{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:black;
+    border:1px solid #333;
+    border-radius:0;
+    z-index:9999;
+    overflow:auto;
+}
+#chatHeader{
+    background:#111;
+    padding:15px;
+    text-align:center;
+}
+#chatMessages{
+    height:calc(100% - 120px);
+    overflow-y:auto;
+    padding:10px;
+}
+#chatInput{
+    width:70%;
+    padding:8px;
+    border:none;
+    background:#222;
+    color:white;
+    box-sizing:border-box;
+}
+#sendBtn{
+    width:28%;
+    padding:8px;
+    background:#007bff;
+    border:none;
+    color:white;
+    cursor:pointer;
+    margin-left:2%;
+    box-sizing:border-box;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Elly Enga</div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <div class="menu" id="menu">
+        <a onclick="goHome()">Home</a>
+        <a onclick="openSection('about')">About Me</a>
+        <a onclick="openSection('education')">Education</a>
+        <a onclick="openSection('career')">Career</a>
+        <a onclick="openSection('photos')">Photos</a>
+        <a onclick="openSection('videos')">Videos</a>
+        <a onclick="openSection('contact')">Contact</a>
+    </div>
+</header>
+
+<!-- HOME -->
+<div id="home">
+    <div id="quote">"EVERY GREAT DREAM BEGINS WITH A DREAMER."</div>
+</div>
+
+<!-- ABOUT ME -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>My name is <b>Elly Enga</b>, from Mansa, Zambia. Life has been a journey filled with challenges, moments of loneliness, and learning how to make the most of what I have. My family had moderate financial resources, and I grew up understanding the value of patience, resilience, and hard work.</p>
+    <p>Since childhood, I have been fascinated by technology and learning. I would spend hours exploring computers, coding small programs, and imagining a life beyond my immediate circumstances. Even in lonely times, curiosity and determination kept me moving forward.</p>
+    <p>Through every challenge, there has been <b>Zipporah</b>, my best friend, my light, and the person I love deeply. She is cute, more than any girl I have ever met. Her love is constant, pure, and unwavering. She supports me, encourages me, and makes life brighter even when things seem dark. I want to be with her forever, and I don’t love girls randomly; my heart belongs only to Zipporah.</p>
+    
+    
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    <p>Life may be lonely sometimes, but with hope, love, and determination, I strive to create a brighter future. Every dream I have, every project I build, is fueled by the desire to make a life that both Zipporah and I can cherish together.</p>
+
+    <div class="gallery">
+        <img src="Elly1.jpg" alt="Elly Photo 1">
+        <img src="Elly2.jpg" alt="Elly Photo 2">
+        
+        
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2>Education</h2>
+    <p>I started school at Mutende Day Secondary School and later continued at Don Bosco Secondary School for Grades 10 to 12. Resources were limited, and life taught me the importance of dedication and self-motivation.</p>
+    <p>I spent countless nights studying mathematics, science, and programming. I also explored online tutorials to enhance my skills. Each accomplishment, no matter how small, reminded me that education opens doors to possibilities beyond my environment.</p>
+
+    <div class="gallery">
+        <img src="images (1).jpg" alt="Education Photo 1">
+        <img src="images (4).jpeg" alt="Education Photo 2">
+        <img src="images (5).jpeg" alt="Education Photo 3">
+        <img src="images (6).jpeg" alt="Education Photo 4">
+        <img src="Elly3.jpg" alt="Elly Photo 3">
+        <img src="ellG.jpg" alt="Elly Photo 3">
+
+        
+        
+        
+    </div>
+</section>
+
+<!-- CAREER -->
+<section id="career">
+    <h2>Career & Dreams</h2>
+    <p>I want to become a software developer and build technology that helps people and improves lives. I am starting small, learning daily, and building projects step by step. Every achievement motivates me to keep growing and improving.</p>
+    
+    
+    <div class="gallery">
+
+            <img src="robot3.jpeg" alt="Career Photo 3">
+            <img src="career1.jpeg" alt="career 1">
+            <img src="career2.jpeg" alt="career 2">
+    </div>
+
+    
+    
+    <p>Additionally, I have a dream to become a pilot and fly for Emirates Airlines. Aviation has fascinated me since childhood, and the idea of traveling the world while doing what I love excites me deeply. I hope one day to combine my passion for technology with my dream of flying, creating opportunities to explore both the digital and real skies.</p>
+    
+        <div class="gallery">
+            <img src="career5.jpeg"alt="Career Photo 2">
+            <img src="fly1.jpeg"alt="Career Photo 2">
+        </div>
+
+    
+    
+    
+    
+    
+    <p>Zipporah’s love and support inspire me to continue pursuing my dreams, both in programming and aviation. Life may be challenging, but determination, love, and ambition guide me toward a bright future.</p>
+
+        
+        
+        
+        
+</section>
+
+<!-- PHOTOS -->
+<section id="photos">
+    <h2>Photos</h2>
+    <p>These photos capture important moments of my life, from learning and building projects to spending time with friends and family. Each image tells a story of growth, perseverance, and hope.</p>
+
+    <div class="gallery">
+        
+        <img src="photo1.jpeg" alt="Photo 1">
+        <img src="photo6.jpeg" alt="Photo 6">
+        <img src="photo3.jpeg" alt="Photo 3">
+        <img src="photo4.jpeg" alt="Photo 4">
+        <img src="photo5.jpeg" alt="Photo 5">
+        <img src="photo7.jpeg" alt="Elly Photo 3">
+
+        <img src="ca<div></div>.jpeg" alt="Photo 6">
+    </div>
+</section>
+
+<!-- VIDEOS -->
+<section id="videos">
+    <h2>Videos</h2>
+    <p>These videos show moments from my life, hobbies, small projects, and memories with friends and family. Each video reflects my journey, challenges, and growth.</p>
+    
+    
+    <div class="gallery">
+
+    <video controls>
+        <source src="free.mp4">
+    </video>
+    
+    <video controls>
+        <source src="zipo.mp4">
+    </video>
+    
+    <video controls>
+        <source src="video.mp4">
+    </video>
+    <video controls>
+    <source src="video1.mp4">
+</video>
+
+<video controls>
+    <source src="video2.mp4">
+</video>
+
+<video controls>
+    <source src="video3.mp4">
+</video>
+    
+    
+    
+        </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>If you want to reach out, I welcome connections, collaborations, and friendly conversations. Every message, question, or opportunity is appreciated and valued.</p>
+    <p>Email: <b>ellychisheta@gmail.com</b></p>
+    <p>Facebook: <a href="https://facebook.com/KleempWrld" target="_blank">Elly Enga</a></p>
+    <p>WhatsApp: <a href="https://wa.me/260769635654" target="_blank">Chat</a></p>
+</section>
+
+<!-- CHATBOT -->
+<button id="chatButton" onclick="toggleChat()">💬</button>
+
+<div id="chatbot">
+    <div id="chatHeader">Ask Anything About Elly</div>
+    <div id="chatMessages"></div>
+    <input id="chatInput" placeholder="Ask anything about him...">
+    <button id="sendBtn" onclick="chat()">Send</button>
+</div>
+
+<script>
+/* MENU */
+function toggleMenu(){let menu=document.getElementById("menu");menu.style.display=(menu.style.display==="flex")?"none":"flex";}
+function openSection(id){let sections=document.querySelectorAll("section");sections.forEach(sec=>sec.style.display="none");document.getElementById(id).style.display="block";document.getElementById("menu").style.display="none";}
+function goHome(){let sections=document.querySelectorAll("section");sections.forEach(sec=>sec.style.display="none");document.getElementById("home").style.display="flex";document.getElementById("menu").style.display="none";}
+
+/* ROTATING QUOTES */
+const quotes=[
+"EVERY GREAT DREAM BEGINS WITH A DREAMER.",
+"Success is not final, failure is not fatal: It is the courage to continue that counts.",
+"Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.",
+"The only limit to our realization of tomorrow will be our doubts of today.",
+"Dream big, work hard, and never give up.",
+"Love, hope, and determination create the strongest foundations for life."
+];
+let quoteIndex=0;
+const quoteDiv=document.getElementById("quote");
+function showNextQuote(){quoteDiv.classList.remove("show");setTimeout(()=>{quoteDiv.innerText=`"${quotes[quoteIndex]}"`;quoteDiv.classList.add("show");quoteIndex=(quoteIndex+1)%quotes.length;},500);}
+showNextQuote();setInterval(showNextQuote,5000);
+
+/* CHATBOT */
+function toggleChat(){let bot=document.getElementById("chatbot");bot.style.display=(bot.style.display=="block")?"none":"block";}
+const chatDictionary={
+"name":"Elly Enga is his full name. He is from Mansa, Zambia, and loves technology, programming, and building projects.",
+
+"who":"Elly Enga is his full name. Kleempwrld is his Facebook username and you can call him as Harold if you want. He is from Mansa, Zambia, and loves technology, programming, and building projects.",
+
+
+
+
+
+
+"age":"Elly is young and passionate about learning programming and technology.",
+"hobby":"Elly enjoys programming, building projects, exploring technology, learning AI and robotics, and creating new ideas.",
+"interests":"He is interested in programming, AI, robotics, aviation, and building software that helps people.",
+"education":"Elly studied at Mutende Day Secondary School and Don Bosco Secondary School. He focused on math, science, and self-learning programming.",
+"career":"Elly wants to become a software developer and also dreams of being a pilot to fly for Emirates Airlines. He works daily to improve his skills and pursue both dreams.",
+"future":"Elly dreams of a future where he is successful, supports his family, creates meaningful projects, and lives happily with Zipporah.",
+"family":"Elly comes from a family with moderate resources. Life is not always easy, but he values his family and their support.",
+"relationship":"Elly is in a loving relationship with Zipporah. She is his best friend, his true love, and the cutest girl he has ever met. Their love motivates him every day.",
+"zipporah":"Zipporah is Elly's best friend and true love. She supports him, encourages him, and makes his life brighter. He wants to be with her forever.",
+"contact":"You can contact Elly via email, Facebook, or WhatsApp using the links in the Contact section.",
+"projects":"Elly has started working on small programming projects, exploring web development, AI, robotics, and aviation interests.",
+"life":"Elly’s life is a journey of learning, facing challenges, experiencing loneliness, and finding hope and love in Zipporah and his dreams.",
+"quotes":"Elly believes in dreams, perseverance, courage, and hard work. His philosophy revolves around learning, improving, and never giving up.",
+"motivation":"Elly is motivated by Zipporah's love, his passion for technology, his dream of flying, and the desire to overcome struggles and achieve meaningful goals."
+};
+function chat(){
+let input=document.getElementById("chatInput").value.toLowerCase().trim();
+let messages=document.getElementById("chatMessages");
+if(!input) return;
+let userDiv=document.createElement("div");
+userDiv.style.color="#00bfff";
+userDiv.style.marginBottom="5px";
+userDiv.innerHTML="<b>You:</b> "+input;
+messages.appendChild(userDiv);
+let replyArray=[];
+let words=input.split(/\s+/);
+for(let key in chatDictionary){
+for(let word of words){
+if(word.includes(key)){
+replyArray.push(chatDictionary[key]);
+break;
+}}}
+let reply=replyArray.length>0?[...new Set(replyArray)].join(" "):"I don't know about that. Try asking something else about Elly Enga(known as KleempWrld).";
+let botDiv=document.createElement("div");
+botDiv.style.color="#fff";
+botDiv.style.marginBottom="10px";
+botDiv.innerHTML="<b>EllyBot:</b> ";
+messages.appendChild(botDiv);
+let index=0;
+function typeChar(){if(index<reply.length){botDiv.innerHTML+=reply.charAt(index);index++;messages.scrollTop=messages.scrollHeight;setTimeout(typeChar,15);}}
+typeChar();
+document.getElementById("chatInput").value="";
+}
+
+/* DRAGGABLE CHAT BUTTON */
+dragElement(document.getElementById("chatButton"));
+function dragElement(elm){
+  let pos1=0,pos2=0,pos3=0,pos4=0;
+  elm.onmousedown=dragMouseDown;
+  function dragMouseDown(e){
+    e=e||window.event;
+    e.preventDefault();
+    pos3=e.clientX;
+    pos4=e.clientY;
+    document.onmouseup=closeDragElement;
+    document.onmousemove=elementDrag;
+  }
+  function elementDrag(e){
+    e=e||window.event;
+    e.preventDefault();
+    pos1=pos3-e.clientX;
+    pos2=pos4-e.clientY;
+    pos3=e.clientX;
+    pos4=e.clientY;
+    elm.style.top=(elm.offsetTop-pos2)+"px";
+    elm.style.left=(elm.offsetLeft-pos1)+"px";
+  }
+  function closeDragElement(){
+    document.onmouseup=null;
+    document.onmousemove=null;
+  }
+}
+</script>
+
+</body>
+</html>
